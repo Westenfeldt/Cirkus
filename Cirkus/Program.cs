@@ -6,6 +6,7 @@ namespace Cirkus
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Velkommen til cirkus IT-Support");
             Console.WriteLine("Vi har 4 forskellige typer billetter");
             Console.WriteLine("Normal: N");
@@ -33,6 +34,7 @@ namespace Cirkus
             switch (valg)
             {
                 case "n":
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     while (i <= 2) { 
                     Console.WriteLine("Hvor mange billetter ønsker du at købe?");
                     antal = Convert.ToInt16(Console.ReadLine());
@@ -52,6 +54,8 @@ namespace Cirkus
                             totalpris = totalpris + (pris * antal);
                             Console.WriteLine("                   ");
                             Console.WriteLine("Din nye pris er: {0}", totalpris);
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("                   ");
                             Console.WriteLine("Tak for købet af billetter til cirkus IT-Support - Have en god fornøjelse.");
                         }
 
@@ -59,6 +63,7 @@ namespace Cirkus
                     }
                     break;
                 case "t":
+                    Console.ForegroundColor = ConsoleColor.Red;
                     while (i <= 2)
                     {
                         Console.WriteLine("Hvor mange billetter ønsker du at købe?");
@@ -79,8 +84,9 @@ namespace Cirkus
                         {
                             totalpris = totalpris + (prisT * antal);
                             Console.WriteLine("                   ");
-                            Console.WriteLine("                   ");
                             Console.WriteLine("Din nye pris er: {0}", totalpris);
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("                   ");
                             Console.WriteLine("Tak for købet af billetter til cirkus IT-Support - Have en god fornøjelse.");
                         }
 
@@ -89,6 +95,7 @@ namespace Cirkus
                     break;
 
                 case "p":
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     while (i <= 2)
                     {
                         Console.WriteLine("Hvor mange billetter ønsker du at købe?");
@@ -109,8 +116,9 @@ namespace Cirkus
                         {
                             totalpris = totalpris + (prisP * antal);
                             Console.WriteLine("                   ");
-                            Console.WriteLine("                   ");
                             Console.WriteLine("Din nye pris er: {0}", totalpris);
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("                   ");
                             Console.WriteLine("Tak for købet af billetter til cirkus IT-Support - Have en god fornøjelse.");
                         }
 
@@ -118,6 +126,7 @@ namespace Cirkus
                     }
                     break;
                 case "l":
+                    Console.ForegroundColor = ConsoleColor.Magenta;
                     while (i <= 2)
                     {
                         Console.WriteLine("Hvor mange billetter ønsker du at købe?");
@@ -138,8 +147,9 @@ namespace Cirkus
                         {
                             totalpris = totalpris + (prisL * antal);
                             Console.WriteLine("                   ");
-                            Console.WriteLine("                   ");
                             Console.WriteLine("Din nye pris er: {0}", totalpris);
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                            Console.WriteLine("                   ");
                             Console.WriteLine("Tak for købet af billetter til cirkus IT-Support - Have en god fornøjelse.");
                         }
 
